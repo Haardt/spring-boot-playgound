@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      javax:
+        persistence:
+          validation:
+            # We don't want to run the hibernate validation. Spring will do the validation!
+            #mode: none
